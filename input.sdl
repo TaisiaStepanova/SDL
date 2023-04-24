@@ -1,0 +1,78 @@
+function math(float* a){
+	write(lg(a))
+	write(ln(a))
+	write(sin(a))
+	write(cos(a))
+	write(tan(a))
+	write(asin(a))
+	write(acos(a))
+	write(atan(a))
+}
+
+function compare(){
+    int a
+    int b
+	read(a)
+	read(b)
+	if a == b {
+		write(a)
+write(b)}
+	else{
+		if a > b {
+			write(a)}
+		elif a < b {
+			write(b)}
+}
+}
+
+function mathh(float* a, float* b, int* n){
+	switch n{
+	case 1{
+		write(a+b)}
+	case 2{
+		write(a-b)}
+	case 3{
+		write(a*b)}
+	case 4{
+		write(a/b)}
+	case 5{
+		write(a%b)}
+	case 6{
+		write(a^b)}
+}
+}
+
+int ssss = 0
+
+float k = 5
+float e = 0.5
+bool tmp = True
+if tmp == True{
+math(&e)}		/// -0.30103 		вывод
+				/// -0.693147
+				/// 0.479426
+				/// 0.877583
+				/// 0.546302
+				/// 0.523599
+				/// 1.0472
+				/// 0.463648
+
+compare() 			/// 2  5    		ввод
+				/// 5			вывод
+int oper = 1
+mathh(&k, &e, &oper)	/// 5.5
+
+oper = 2
+mathh(&k, &e, &oper)	/// 4.5
+
+oper = 3
+mathh(&k, &e, &oper)	/// 2.5
+
+oper = 4
+mathh(&k, &e, &oper)	/// 10.0
+
+oper = 5
+mathh(&k, &e, &oper)	/// 0
+
+oper = 6
+mathh(&k, &e, &oper)	/// 2.3
